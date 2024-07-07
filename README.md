@@ -2,7 +2,7 @@
 
 Requisitos
 
-  *Funciona solo con letras minúsculas.
+  * Funciona solo con letras minúsculas.
   
   * No se deben usar letras con acentos ni caracteres especiales.
 
