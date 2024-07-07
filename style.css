@@ -1,0 +1,149 @@
+:root {
+    --bg-color: #222831;
+    --primary-color: #31363F;
+    --secondary-color: #76ABAE;
+    --text-color: #EEEEEE;
+    --button-hover-color: #EEEEEE;
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    font-size: 150%;
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5px;
+    flex-direction: row; /* Default layout for larger screens */
+}
+
+.input-section {
+    margin: 1% 3%;
+    padding: 5px;
+    width: 60%;
+}
+
+.output-section {
+    margin: 1% 3%;
+    padding: 5px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.escribir {
+    width: 96.5%;
+    height: 30em;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    background-color: var(--primary-color); 
+    color: var(--secondary-color);
+    font-size: 120%;
+    margin-bottom: 20px;
+}
+
+.posicion {
+    display: flex;
+    justify-content: center;
+}
+
+button {    
+    color: var(--bg-color);
+    width: 150px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    font-size: 110%;
+    cursor: pointer;
+    margin: 0% 5%;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+    color: var(--primary-color);
+}
+
+.resultados {
+    width: 60%;
+    height: 28.5em;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultados img {
+    width: 100%;
+    height: 100%;
+}
+
+.text-codificado {
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+    display: none;
+    background-color: var(--primary-color);
+    font-size: 120%;
+    border: none;
+    color: var(--secondary-color);
+    padding: 1em;
+}
+
+.boton-copiar {
+    margin-top: 20px;
+    display: none;
+}
+
+textarea::placeholder {
+    color: var(--secondary-color);
+}
+
+@media (max-width: 1000px) {
+    main {
+        flex-direction: column; /* Change to column layout */
+        align-items: center; /* Center align items */
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .input-section, .output-section {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 1% 0; /* Adjust margins */
+    }
+
+    .escribir {
+        width: 90%; /* Full width for input textarea */
+    }
+
+    .resultados {
+        width: 90%; /* Full width for output section */
+    }
+
+    .resultados img {
+        width: 90%;
+        height: 90%;
+    }
+}
